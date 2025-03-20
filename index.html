@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City of Pearls Hyderabad</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        const text = "Experience the Vibrancy of Hyderabad";
+        let index = 0;
+        function typeEffect() {
+            if (index < text.length) {
+                document.getElementById("typewriter").innerHTML += text.charAt(index);
+                index++;
+                setTimeout(typeEffect, 50);
+            }
+        }
+        document.addEventListener("DOMContentLoaded", typeEffect);
+    </script>
+</head>
+<body style="font-family: roboto;">
+    <header>
+        <h1>Welcome to City of Pearls Hyderabad</h1>
+        <h3>The Land of Heritage, Culture, and Innovation</h3>
+    </header>
+
+    <nav>
+        <a href="1tourist.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="hotel-booking.html">Hotel Booking</a>
+        <a href="#about">About Hyderabad</a>
+        <a href="#attractions">Attractions</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="hero">
+        <h1 class="top">
+            <span class="typewriter-text" id="typewriter"></span>
+        </h1>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Hyderabad</h2>
+        <p>Hyderabad, famously known as the City of Pearls, is a blend of tradition, technology, and history. It is the capital of Telangana, known for its stunning landmarks like Charminar, Golconda Fort, and the modern IT hub of Hitech City. From the grandeur of Chowmahalla Palace to the flavors of Hyderabadi Biryani, Hyderabad offers an unforgettable experience.</p>
+    </section>
+
+    <section id="attractions" class="section">
+        <h2>Top Attractions</h2>
+        <div class="cards">
+            <a href="charminar.html" target="_blank">
+                <div class="card">
+                    <img src="charminar.webp"> 
+                    <h3>Charminar</h3>
+                    <p>The most iconic landmark of Hyderabad, built in 1591.</p>
+                </div>
+            </a>
+            <a href="golconda.html" target="_blank">
+                <div class="card">
+                    <img src="golconda.webp">
+                    <h3>Golconda Fort</h3>
+                    <p>A majestic fortress with a rich history and fantastic acoustics.</p>
+                </div>
+            </a>
+
+            <a href="birla-mandir.html" target="_blank">
+                <div class="card">
+                    <img src="birla-mandir.webp">
+                    <h3>Birla Mandir</h3>
+                    <p>A beautiful white marble temple overlooking the city.</p>
+                </div>
+            </a>
+                        
+            <a href="husainsagar.html" target="_blank">
+                <div class="card">
+                    <img src="husainsagar.webp">
+                    <h3>Hussain Sagar Lake</h3>
+                    <p>A scenic lake with a giant Buddha statue at the center.</p>
+                </div>
+            </a>
+            <a href="chowmahalla.html" target="_blank">
+                <div class="card">
+                    <img src="chowmahalla.webp"> 
+                    <h3>Chowmahalla Palace</h3>
+                    <p>Once the seat of the Nizams, now a stunning historical attraction.</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section id="hotel" class="section">
+        <h2>Book Hotel Now</h2>
+        <div class="hotels">
+            <div class="hotel">
+                <img src="hotel1.webp" alt="">
+            </div>
+            <div class="hotel">
+                <img src="hotel2.webp" alt="">
+            </div>
+            <center>
+                <button><a href="hotel-booking.html" style="text-decoration: none;">Book Now</a></button>
+            </center>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p>Plan your trip to Hyderabad today! For more information, contact us at <a href="mailto:info@cityofpearlshyderabad.com">info@cityofpearlshyderabad.com</a>.</p>
+    </section>
+</body>
+</html>
